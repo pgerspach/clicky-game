@@ -32,7 +32,7 @@ class App extends Component {
         <header className="App-header">
           <span>Clicky Game!</span>
           <div>{this.state.message}</div>
-          <div>{this.state.score}</div>
+          <div>Score: {this.state.score}</div>
         </header>
         <GameContainer
           handleGoodClick={this.handleGoodClick}

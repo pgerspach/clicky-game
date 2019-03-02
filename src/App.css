@@ -1,3 +1,11 @@
+.App{
+  display: flex;
+  flex-direction: column;
+  width:100vw;
+  height:auto;
+  overflow: hidden;
+}
+
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 80px;
@@ -20,7 +28,8 @@
 }
 .container {
   box-sizing: border-box;
-  height: calc(100vh - 80px);
+  min-height: calc(100vh - 80px);
+  height:auto;
   background-color: white;
   width: 100vw;
   padding: 0px 300px;
@@ -29,6 +38,8 @@
   flex-wrap: wrap;
   justify-content: space-around;
   align-content: space-around;
+  flex-shrink:0;
+  overflow:scroll;
 }
 
 @keyframes CharacterHover {
@@ -48,6 +59,7 @@ img {
   background-color: #619efb;
   height: 180px;
   width: 180px;
+  overflow: hidden;
 }
 .character:hover {
   cursor: pointer;

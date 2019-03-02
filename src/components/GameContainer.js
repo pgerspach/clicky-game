@@ -48,13 +48,11 @@ class GameContainer extends Component {
 
   render() {
     return (
-      <div>
         <div className="container">
           {shuffle(images).map(char => (
             <Character handleOnClick = {this.handleOnClick} character={char} />
           ))}
         </div>
-      </div>
     );
   }
 }
